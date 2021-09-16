@@ -29,8 +29,8 @@ function Map({searchResults}) {
             {searchResults.map(result=>(
                 <div key={result.long}>
                     <Marker longitude={result.long} latitude={result.lat} offsetLeft={-20} offsetTop={-10}>
-                        <p role="img" onClick={()=>setSelectedLocation(result)} className='cursor-pointer text-2xl animate-bounce' aria-label="flag">
-                            ⛳  
+                        <p onClick={()=>setSelectedLocation(result)} className='cursor-pointer text-2xl animate-bounce' aria-label="flag">
+                          📌
                         </p>
                     </Marker>
 
